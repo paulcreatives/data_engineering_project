@@ -1,5 +1,4 @@
 # Databricks notebook source
-# Databricks notebook source
 # Raw Mount
 dbutils.fs.mount(
   source = "wasbs://palashraw@palashgen2.blob.core.windows.net",
@@ -109,7 +108,7 @@ bfTable.write.format("delta").mode("Overwrite").save("/mnt/Gold/BudgetFact")
 
 # MAGIC %sql
 # MAGIC 
-# MAGIC -- Time-Travel
+# MAGIC -- Time-Travel by parameters like version number or timestamp
 # MAGIC 
 # MAGIC SELECT * FROM delta.`/mnt/SilverDelta/CustomerDim` version as of 4
 
