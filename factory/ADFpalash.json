@@ -1,0 +1,9 @@
+{
+	"name": "ADFpalash",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d04f15ca-edc0-4ca7-9817-5371ac35fa92",
+		"tenantId": "afaf7cfd-75b3-4c1c-a3d4-06386ecda049"
+	}
+}
