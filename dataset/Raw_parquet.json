@@ -1,5 +1,5 @@
 {
-	"name": "Silver_parquet",
+	"name": "Raw_parquet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLake",
@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "masterFile",
 				"folderPath": "Raw_unprocessed",
 				"fileSystem": "airlines"
 			},
