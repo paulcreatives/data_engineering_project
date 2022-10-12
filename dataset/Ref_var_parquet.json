@@ -1,0 +1,20 @@
+{
+	"name": "Ref_var_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Raw_unprocessed",
+				"fileSystem": "airlines"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
