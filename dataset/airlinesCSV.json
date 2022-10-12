@@ -18,15 +18,6 @@
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "IATA_CODE",
-				"type": "String"
-			},
-			{
-				"name": "AIRLINE",
-				"type": "String"
-			}
-		]
+		"schema": []
 	}
 }
