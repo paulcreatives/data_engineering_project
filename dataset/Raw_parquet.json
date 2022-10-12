@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "masterFile",
 				"folderPath": "Raw_unprocessed",
 				"fileSystem": "airlines"
 			},
