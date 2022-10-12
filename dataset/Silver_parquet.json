@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "Silv_transformed",
+				"folderPath": "Raw_unprocessed",
 				"fileSystem": "airlines"
 			},
 			"compressionCodec": "snappy"
