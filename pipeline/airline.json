@@ -56,7 +56,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Silver_parquet",
+						"referenceName": "Raw_parquet",
 						"type": "DatasetReference"
 					}
 				]
