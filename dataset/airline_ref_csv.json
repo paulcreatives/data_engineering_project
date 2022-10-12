@@ -1,0 +1,32 @@
+{
+	"name": "airline_ref_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "data_stream/ref_variable",
+				"fileSystem": "airlines"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "IATA_CODE",
+				"type": "String"
+			},
+			{
+				"name": "AIRLINE",
+				"type": "String"
+			}
+		]
+	}
+}
