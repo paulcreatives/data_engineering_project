@@ -1,0 +1,20 @@
+{
+	"name": "Silver_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Silv_transformed",
+				"fileSystem": "airlines"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
