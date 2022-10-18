@@ -1,0 +1,21 @@
+{
+	"name": "Raw_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "masterPartition",
+				"folderPath": "Raw_unprocessed",
+				"fileSystem": "airlines"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
