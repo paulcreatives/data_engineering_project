@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFpalash"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLake_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks_accessToken": {
+			"value": ""
+		},
+		"AzureDataLake_properties_typeProperties_url": {
+			"value": "https://palashgen2.dfs.core.windows.net/"
+		},
+		"AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0905-074254-29sal36d"
+		},
+		"event_trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/dfc6028e-4cbd-4d78-99f7-585bf8c438d4/resourceGroups/palash/providers/Microsoft.Storage/storageAccounts/palashgen2"
+		}
+	}
+}
