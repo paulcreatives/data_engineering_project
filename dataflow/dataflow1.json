@@ -12,27 +12,27 @@
 					"name": "source1"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "CSV",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [],
 			"scriptLines": [
-				"source(output(",
-				"          ProductKey as short,",
-				"          OrderDate as timestamp,",
-				"          ShipDate as timestamp,",
-				"          CustomerKey as short,",
-				"          PromotionKey as string,",
-				"          SalesTerritoryKey as short,",
-				"          SalesOrderNumber as string,",
-				"          SalesOrderLineNumber as string,",
-				"          OrderQuantity as short,",
-				"          UnitPrice as double,",
-				"          TotalProductCost as double,",
-				"          SalesAmount as double,",
-				"          TaxAmt as double",
-				"     ),",
-				"     allowSchemaDrift: true,",
+				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source1"
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
